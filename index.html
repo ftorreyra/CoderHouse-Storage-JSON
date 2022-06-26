@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <h1>FENIX ALMACEN</h1>
+        </div>
+        <nav class="header__nav">
+            <ul>
+                <li><a href="#">OFERTAS</a></li>
+                <li><a href="#">ALMACEN</a></li>
+                <li><a href="#">FRIOS Y CONGELADOS</a></li>
+                <li><a href="#">FRUTAS Y VERDURAS</a></li>
+                <li><a href="#">COSMÉTICA</a></li>
+                <li><a href="#">HOGAR</a></li>
+            </ul>
+        </nav>
+        <button id="cart__button" class="cart__button">Carrito: <span id="contadorCarrito">0</span></button>
+    </header>
+    <section id="productContainer" class="productContainer">
+       
+    </section>
+
+    <div id="container__cart" class="container__cart">
+        <div class="container__cart__modal">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"></button>
+            <label for="cupon">Ingrese cupon de descuento:</label>
+            <input type="text" name="cupon" id="cupon">
+            <button id="button__cupon">Ingresar cupon</button>
+            <div id="carrito-contenedor"></div>
+        </div>
+        <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
+        <div id="descuento"></div>
+    </div>
+
+    <script src="products.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
